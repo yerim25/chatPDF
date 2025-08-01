@@ -9,7 +9,7 @@ export interface AskQuestionResponse {
 export async function uploadPDF(file: File): Promise<UploadPDFResponse> {
   const formData = new FormData();
   formData.append("file", file);
-  const response = await fetch("https://chatpdf-vng9.onrender.com/upload_pdf/", {
+  const response = await fetch("https://chatpdf-backend-j3mm.onrender.com/upload_pdf/", {
     method: "POST",
     body: formData,
   });
